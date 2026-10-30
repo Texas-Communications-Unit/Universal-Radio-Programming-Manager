@@ -205,3 +205,8 @@ The first usable release should include:
 The long-term goal of the **TX-COMU Universal Radio Programming Manager** is to give qualified incident communications personnel one consistent, reliable, and manufacturer-neutral workflow for preparing and managing public safety radios during planned events, mutual aid operations, disasters, and large-scale emergency incidents.
 
 The project is being developed by **Texas Communications Unit** in support of public safety interoperability and emergency communications.
+
+
+## Branding Standards
+
+All project documentation, user-interface work, visual assets, screenshots, and public-facing materials must follow the [TX-COMU Branding Standards](BRANDING.md), which reference the organization-wide canonical brand guide.
