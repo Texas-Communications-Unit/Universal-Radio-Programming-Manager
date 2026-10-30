@@ -37,8 +37,9 @@ Manufacturer support should be implemented through isolated adapters. The univer
 
 Adapters should clearly declare:
 
-- Supported manufacturers and model families.
-- Supported firmware/software versions where known.
+- Supported manufacturers, product families, and exact models.
+- Supported hardware revisions and firmware/software versions where known.
+- Installed/licensed feature assumptions and known capability differences.
 - Integration level: file-based, assisted, or direct programming.
 - Required manufacturer software, drivers, SDKs, or licenses.
 - Read/write capabilities.
@@ -47,7 +48,7 @@ Adapters should clearly declare:
 
 ## Test data
 
-Use fictional or fully sanitized fixtures. Sample frequencies, talkgroups, radio IDs, serial numbers, agency names, and incident names must not represent operational systems unless the information is already public and appropriate for inclusion.
+Use fictional or fully sanitized fixtures. Controlled cross-manufacturer research samples should follow [docs/reference-codeplug-standard.md](docs/reference-codeplug-standard.md). Sample frequencies, talkgroups, radio IDs, serial numbers, agency names, and incident names must not represent operational systems unless the information is already public and appropriate for inclusion.
 
 ## Security issues
 
