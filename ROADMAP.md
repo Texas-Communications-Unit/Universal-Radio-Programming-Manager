@@ -6,7 +6,7 @@ This roadmap is directional and will evolve as manufacturer partnerships, techni
 
 - Define the manufacturer-neutral programming data model.
 - Establish repository governance, contribution, security, and testing practices.
-- Define compatibility metadata by manufacturer, model, firmware, and integration level.
+- Define capability metadata by manufacturer, product family, exact model, hardware revision, firmware, programming-software version, installed/licensed feature set, and integration level.
 - Define incident template and radio inventory models.
 - Establish backup, restore, audit, and validation requirements.
 - Document authorization boundaries for manufacturer integrations.
@@ -37,8 +37,9 @@ Priority order:
 2. L3Harris public-safety P25 families
 3. JVCKENWOOD Viking VP families
 4. BK Technologies BKR and supported legacy families
+5. Tait Communications public-safety radio families
 
-For each adapter, document the supported integration level and limitations.
+For each adapter, document support at the exact-model, firmware/software-version, and feature-option level along with the supported integration level and limitations.
 
 ## Phase 5 — Authorized programming and field validation
 

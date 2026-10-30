@@ -1,0 +1,101 @@
+name: Reference Codeplug Sample
+description: Propose a sanitized conventional or P25 trunked research sample.
+title: "[Sample]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for synthetic or fully sanitized research samples only.
+        Do not attach operational codeplugs, encryption material, credentials, or protected system information.
+
+  - type: dropdown
+    id: profile
+    attributes:
+      label: Reference profile
+      options:
+        - Profile A — Conventional
+        - Profile B — P25 Trunked
+        - One-variable differential variant
+    validations:
+      required: true
+
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+    validations:
+      required: true
+
+  - type: input
+    id: family
+    attributes:
+      label: Product family
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Exact model
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware revision
+      description: Enter "Unknown" if not available.
+
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware version
+      description: Enter "Unknown" if not available.
+    validations:
+      required: true
+
+  - type: input
+    id: software
+    attributes:
+      label: Programming software and version
+    validations:
+      required: true
+
+  - type: input
+    id: filetype
+    attributes:
+      label: File type / extension
+    validations:
+      required: true
+
+  - type: textarea
+    id: features
+    attributes:
+      label: Installed/licensed feature options
+      description: List only feature names/status. Do not include keys, credentials, IDs, or operational values.
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Model or software limitations
+      description: Describe fields the radio/software could not represent or defaults it added automatically.
+
+  - type: textarea
+    id: differential
+    attributes:
+      label: Differential change
+      description: For a one-variable variant, state exactly one setting that changed. Otherwise enter "Baseline".
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Sanitization and rights
+      options:
+        - label: The sample is synthetic or fully sanitized and contains no operational system information.
+          required: true
+        - label: The sample contains no encryption keys, credentials, certificates, or protected key-management data.
+          required: true
+        - label: I have the right to provide this file for the proposed repository use.
+          required: true
+        - label: I reviewed docs/reference-codeplug-standard.md.
+          required: true
