@@ -1,0 +1,109 @@
+# TX-COMU Universal Radio Programming Manager
+# .NET / Visual Studio
+.vs/
+.vscode/
+.idea/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+artifacts/
+TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+*.snupkg
+
+# Build / package output
+publish/
+packages/
+*.cache
+*.tmp
+*.temp
+*.log
+*.dmp
+
+# Local databases and runtime state
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+data/
+local-data/
+app-data/
+runtime-data/
+
+# Radio configuration backups / restores
+backups/
+radio-backups/
+restore-points/
+recovery/
+
+# Manufacturer / agency programming files
+manufacturer-files/
+vendor-files/
+imports/
+exports/
+*.codeplug
+*.codeplug.*
+
+# Incident and deployment data
+incidents/
+incident-data/
+deployment-data/
+agency-data/
+
+# Local configuration / secrets
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.Development.local.json
+secrets.json
+*.secrets.json
+
+# Credentials, certificates, and cryptographic material
+*.pfx
+*.p12
+*.pem
+*.key
+*.cer
+*.crt
+credentials/
+certificates/
+keys/
+secrets/
+key-material/
+encryption-data/
+keysets/
+
+# Proprietary / licensed manufacturer material
+vendor-sdk/
+manufacturer-sdk/
+licensed-tools/
+proprietary-docs/
+third-party-proprietary/
+
+# Device captures and real-world test data
+device-captures/
+serial-captures/
+usb-captures/
+test-radio-data/
+test-data/private/
+test-data/real/
+fixtures/private/
+
+# Generated reports
+generated/
+reports/generated/
+exports/generated/
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store

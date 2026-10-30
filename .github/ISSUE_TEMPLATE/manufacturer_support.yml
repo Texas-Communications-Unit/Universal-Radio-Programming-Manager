@@ -1,0 +1,49 @@
+name: Manufacturer / radio support request
+description: Request support for a manufacturer, model family, or programming workflow
+title: "[Radio Support]: "
+labels: []
+body:
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model / family
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Known firmware versions
+  - type: dropdown
+    id: integration
+    attributes:
+      label: Requested integration level
+      options:
+        - File-based import/export
+        - Assisted programming
+        - Direct read/write
+        - Inventory / identification only
+        - Unsure
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Public-safety use case
+    validations:
+      required: true
+  - type: textarea
+    id: authorized
+    attributes:
+      label: Known authorized integration options
+      description: List public SDK/API/file-format information or manufacturer-approved interfaces. Do not upload restricted documentation.
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Authorization
+      options:
+        - label: This request does not ask the project to bypass licensing, authentication, access controls, or manufacturer security protections.
+          required: true

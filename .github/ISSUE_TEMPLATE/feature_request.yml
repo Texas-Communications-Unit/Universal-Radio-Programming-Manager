@@ -1,0 +1,42 @@
+name: Feature request
+description: Propose a new URPM capability
+title: "[Feature]: "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Operational problem
+      description: What COML/COMT or technician workflow should this improve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed capability
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Universal data model
+        - Incident templates
+        - Radio inventory
+        - Backup / restore
+        - Manufacturer adapter
+        - Import / export
+        - Validation
+        - UI / workflow
+        - Reporting / audit
+        - Optional online services
+        - Other
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Suggested acceptance criteria
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety / compatibility considerations
