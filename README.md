@@ -10,6 +10,7 @@ Initial manufacturer priorities include:
 - L3Harris public safety P25 radios
 - JVCKENWOOD Viking VP series
 - BK Technologies BKR and supported legacy platforms
+- Tait Communications public-safety radio families
 
 URPM is intended to support complete programming workflows where manufacturer authorization, licensing, technical documentation, and supported interfaces make that possible. The project will not rely on bypassing manufacturer security controls, licensing systems, proprietary protections, or unsupported reverse engineering.
 
@@ -29,7 +30,7 @@ Planned capabilities include:
 - Original configuration backup before programming
 - Configuration restoration and recovery workflows
 - Programming history and audit logging
-- Model and firmware compatibility validation
+- Model, hardware/firmware, programming-software, and feature-option compatibility validation
 - Configuration change previews before radio writes
 - Manufacturer adapter architecture
 - Optional future online template sharing and synchronization
@@ -52,7 +53,7 @@ URPM is being designed around a modular architecture consisting of:
    - Translation between common and vendor-specific settings
 
 3. **Manufacturer Adapter Layer**
-   - Separate adapters for Motorola, L3Harris, JVCKENWOOD, BK Technologies, and future manufacturers
+   - Separate adapters for Motorola, L3Harris, JVCKENWOOD, BK Technologies, Tait Communications, and future manufacturers
    - Support for file-based integration, assisted programming, and direct programming where authorized
 
 4. **Local Data Layer**
@@ -210,3 +211,9 @@ The project is being developed by **Texas Communications Unit** in support of pu
 ## Branding Standards
 
 All project documentation, user-interface work, visual assets, screenshots, and public-facing materials must follow the [TX-COMU Branding Standards](BRANDING.md), which reference the organization-wide canonical brand guide.
+
+## Research Fixtures and Capability Profiles
+
+URPM treats compatibility as manufacturer-, family-, exact-model-, firmware-, software-, and feature-aware. A missing field in one codeplug is not evidence that every radio of that model lacks the feature.
+
+Research samples should follow [the Reference Codeplug Research Standard](docs/reference-codeplug-standard.md). Only synthetic or fully sanitized fixtures may be committed to the public repository.
