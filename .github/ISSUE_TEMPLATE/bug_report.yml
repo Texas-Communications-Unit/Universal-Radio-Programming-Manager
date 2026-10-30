@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a reproducible problem using sanitized data
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include encryption keys, credentials, protected system information, proprietary manufacturer files, or sensitive agency/incident data.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: URPM version / commit
+  - type: input
+    id: environment
+    attributes:
+      label: Windows / .NET environment
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer and model
+      description: Use "N/A" if this is not manufacturer-specific.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Use only fictional or sanitized data.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs or additional context
+      description: Remove serial numbers, credentials, keys, sensitive system details, and proprietary content.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: I have removed sensitive operational data, credentials, encryption material, and proprietary manufacturer content.
+          required: true
