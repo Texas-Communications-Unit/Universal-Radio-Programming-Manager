@@ -1,0 +1,35 @@
+name: .NET CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    name: Build and test
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up latest .NET LTS SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: latest
+          dotnet-channel: LTS
+
+      - name: Restore
+        run: dotnet restore UniversalRadioProgrammingManager.slnx
+
+      - name: Build
+        run: dotnet build UniversalRadioProgrammingManager.slnx --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test UniversalRadioProgrammingManager.slnx --configuration Release --no-build --verbosity normal
