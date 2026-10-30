@@ -1,0 +1,20 @@
+<Window x:Class="TXCOMU.URPM.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TX-COMU Universal Radio Programming Manager"
+        Width="1100"
+        Height="700"
+        MinWidth="900"
+        MinHeight="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="32">
+        <StackPanel>
+            <TextBlock FontSize="28"
+                       FontWeight="SemiBold"
+                       Text="Universal Radio Programming Manager" />
+            <TextBlock Margin="0,8,0,0"
+                       FontSize="15"
+                       Text="TX-COMU offline-first radio programming and configuration platform" />
+        </StackPanel>
+    </Grid>
+</Window>

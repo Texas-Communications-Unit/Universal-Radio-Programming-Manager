@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/URPM.App/URPM.App.csproj" />
+    <Project Path="src/URPM.Core/URPM.Core.csproj" />
+    <Project Path="src/URPM.Infrastructure/URPM.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/URPM.Core.Tests/URPM.Core.Tests.csproj" />
+  </Folder>
+</Solution>
