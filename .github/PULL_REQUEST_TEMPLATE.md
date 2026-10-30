@@ -29,6 +29,7 @@ Closes #
 - [ ] Test data is fictional or sanitized
 - [ ] No proprietary or licensed manufacturer material is included
 - [ ] No credentials, cryptographic keys, or sensitive operational data are included
+- [ ] User-facing changes comply with [TX-COMU Branding Standards](../BRANDING.md)
 
 ## Programming safety checklist
 
