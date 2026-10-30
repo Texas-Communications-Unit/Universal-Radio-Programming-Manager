@@ -53,6 +53,14 @@ Use fictional or fully sanitized fixtures. Sample frequencies, talkgroups, radio
 
 Do not report exploitable security issues in a public GitHub issue. Follow [SECURITY.md](SECURITY.md).
 
+## Branding and public-facing work
+
+All user-facing changes must follow [BRANDING.md](BRANDING.md) and the canonical TX-COMU organization brand guide.
+
+This applies to UI, documentation, screenshots, diagrams, presentations, release notes, icons, and other public-facing project materials. Do not redraw or alter TX-COMU logos, introduce unapproved brand colors, or substantively rewrite controlled organizational messaging.
+
+Pull requests that change user-facing content should note that brand compliance was reviewed.
+
 ## Coding style
 
 The initial implementation target is C#/.NET on Windows. Use clear naming, nullable reference types where practical, dependency injection at integration boundaries, and testable interfaces around manufacturer adapters and device I/O.
