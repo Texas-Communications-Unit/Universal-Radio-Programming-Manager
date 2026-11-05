@@ -124,3 +124,14 @@ A sample should not become a public fixture until it has been reviewed for:
 - feature-option metadata;
 - redistribution rights;
 - consistency with this standard.
+
+
+## Manufacturer-specific canonical profiles
+
+The general research standard is implemented through manufacturer-specific canonical profiles.
+
+Current profile scaffolds:
+
+- [Motorola APX/NEXT Canonical Reference Profile](reference-profiles/motorola-apx-next.md) — awaiting approved controlled values; tracked in #30.
+
+Additional manufacturer/model profiles should reuse the same logical baseline where the target platform permits, while documenting model-, firmware-, software-, and option-dependent differences.
