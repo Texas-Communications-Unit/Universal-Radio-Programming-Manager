@@ -217,3 +217,7 @@ All project documentation, user-interface work, visual assets, screenshots, and 
 URPM treats compatibility as manufacturer-, family-, exact-model-, firmware-, software-, and feature-aware. A missing field in one codeplug is not evidence that every radio of that model lacks the feature.
 
 Research samples should follow [the Reference Codeplug Research Standard](docs/reference-codeplug-standard.md). Only synthetic or fully sanitized fixtures may be committed to the public repository.
+
+## Contributing Reference Codeplugs
+
+Want to help test URPM with your radio platform? See the [Codeplug Contribution Request](docs/codeplug-contribution-request.md) for the exact reference layout, required metadata, and submission rules.
