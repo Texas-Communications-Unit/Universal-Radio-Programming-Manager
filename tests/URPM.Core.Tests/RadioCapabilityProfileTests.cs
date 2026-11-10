@@ -54,4 +54,35 @@ public sealed class RadioCapabilityProfileTests
             CapabilitySupportState.Disabled,
             profile.GetCapability("bluetooth").State);
     }
+
+    [Fact]
+    public void L3Harris_XL200P_Profile_EvaluatesCapabilitiesCorrectly()
+    {
+        var profile = new RadioCapabilityProfile(
+            manufacturer: "L3Harris",
+            productFamily: "XL Series",
+            model: "XL-200P",
+            hardwareRevision: "Rev 1",
+            firmwareVersion: "R06A02",
+            programmingSoftware: "RPM2",
+            programmingSoftwareVersion: "R14B05",
+            bandVariant: "All-Band (VHF/UHF/700/800)");
+
+        profile.SetCapability(new FeatureCapability("p25-phase1", CapabilitySupportState.Supported));
+        profile.SetCapability(new FeatureCapability("p25-phase2", CapabilitySupportState.Supported));
+        profile.SetCapability(new FeatureCapability("multiband", CapabilitySupportState.Supported));
+        profile.SetCapability(new FeatureCapability("lte", CapabilitySupportState.Supported));
+        profile.SetCapability(new FeatureCapability("gps", CapabilitySupportState.Supported));
+        profile.SetCapability(new FeatureCapability("bluetooth", CapabilitySupportState.Supported));
+        profile.SetCapability(new FeatureCapability("edacs-provoice", CapabilitySupportState.Disabled));
+        profile.SetCapability(new FeatureCapability("fips-aes256", CapabilitySupportState.Supported));
+
+        Assert.Equal("L3Harris", profile.Manufacturer);
+        Assert.Equal("XL-200P", profile.Model);
+        Assert.Equal("RPM2", profile.ProgrammingSoftware);
+        Assert.Equal(CapabilitySupportState.Supported, profile.GetCapability("p25-phase2").State);
+        Assert.Equal(CapabilitySupportState.Supported, profile.GetCapability("P25-PHASE2").State);
+        Assert.Equal(CapabilitySupportState.Disabled, profile.GetCapability("edacs-provoice").State);
+        Assert.Equal(CapabilitySupportState.Unknown, profile.GetCapability("unconfigured-feature").State);
+    }
 }
